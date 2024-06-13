@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-container {
+    flex: 1;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+.form {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+
+.form-filed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.input {
+    border: 1px solid lightgray;
+    outline: none;
+    padding: 5px;
+}
+
+.button {
+    width: 100px;
+    padding: 5px;
+    background-color: lightblue;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: lightgreen;
+}
+
+.button:disabled {
+    background-color: lightgray;
+}
+
+.data-container {
+    flex: 1;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-box {
+    width: 60%;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.text-data {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}

@@ -31,7 +31,8 @@ const UserForm = ({ setData, isEdit, setIsEdit }) => {
 
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit}>
+      <h3 className="heading">Input Form</h3>
+      <form onSubmit={handleSubmit} className="form">
         <div className="form-filed">
           <label htmlFor="select-input">Select User</label>
           <select
@@ -40,6 +41,7 @@ const UserForm = ({ setData, isEdit, setIsEdit }) => {
             onChange={handleChange}
             required
             disabled={!isEdit}
+            className="input"
           >
             <option value="Harry">Harry</option>
             <option value="Rohan">Rohan</option>
@@ -48,7 +50,7 @@ const UserForm = ({ setData, isEdit, setIsEdit }) => {
           </select>
         </div>
         <div className="form-filed">
-          <label htmlFor="radio-input-1">Radio input 1</label>
+          <label htmlFor="radio-input-1">Radio Input 1</label>
           <input
             type="radio"
             name="radio"
@@ -59,7 +61,7 @@ const UserForm = ({ setData, isEdit, setIsEdit }) => {
             required
             disabled={!isEdit}
           />
-          <label htmlFor="radio-input-2">Radio input 2</label>
+          <label htmlFor="radio-input-2">Radio Input 2</label>
           <input
             type="radio"
             name="radio"
@@ -72,7 +74,7 @@ const UserForm = ({ setData, isEdit, setIsEdit }) => {
           />
         </div>
         <div className="form-filed">
-          <label htmlFor="CheckBox-input-1">CheckBox input 1</label>
+          <label htmlFor="CheckBox-input-1">CheckBox Input 1</label>
           <input
             type="checkbox"
             className="input"
@@ -82,7 +84,7 @@ const UserForm = ({ setData, isEdit, setIsEdit }) => {
             onClick={handleClick}
             disabled={!isEdit}
           />
-          <label htmlFor="CheckBox-input-2">CheckBox input 2</label>
+          <label htmlFor="CheckBox-input-2">CheckBox Input 2</label>
           <input
             type="checkbox"
             className="input"
@@ -94,7 +96,7 @@ const UserForm = ({ setData, isEdit, setIsEdit }) => {
           />
         </div>
         <div className="form-filed">
-          <label htmlFor="text-input">text input</label>
+          <label htmlFor="text-input">Text Input</label>
           <input
             type="text"
             className="input"
@@ -107,7 +109,7 @@ const UserForm = ({ setData, isEdit, setIsEdit }) => {
           />
         </div>
         <div className="form-filed">
-          <label htmlFor="number-input">number input</label>
+          <label htmlFor="number-input">Number Input</label>
           <input
             type="number"
             className="input"
@@ -120,7 +122,7 @@ const UserForm = ({ setData, isEdit, setIsEdit }) => {
           />
         </div>
         <div className="form-filed">
-          <label htmlFor="currency-input">currency input</label>
+          <label htmlFor="currency-input">Currency Input</label>
           <input
             type="text"
             className="input"
@@ -133,7 +135,7 @@ const UserForm = ({ setData, isEdit, setIsEdit }) => {
           />
         </div>
         <div className="form-filed">
-          <label htmlFor="password-input">password input</label>
+          <label htmlFor="password-input">Password Input</label>
           <input
             type="password"
             className="input"
